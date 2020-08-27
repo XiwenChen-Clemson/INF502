@@ -4,12 +4,12 @@
 
 The function returns the length of the hypotenuse assuming that `length_a` and `length_b` are the lengths of the two legs of a right triangle (the legs that form the triangle's right angle). Hint: the `math` module might have useful functions to use.
 
-For example:
+Source code
 ```
 >>> pythagoreanTheorem(2, 2)
 2.8284271247461903
 ```
-Present your source code and the output of three example runs.
+
 
 **2. Write a function with the following signature:** `list_mangler(list_in)`.
 
