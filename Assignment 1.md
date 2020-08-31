@@ -51,9 +51,7 @@ def list_mangler(list_in):
 
 
 
-```python
-list_mangler([19,29,73,47])
-```
+
 **3. Write a function with the following signature:** `grade_calc(grades_in, to_drop)`.
 ### description
 To implement the function, we first sort (lowest to largest) the grades from the input list. Then pick the valid grades from the index 'to_drop' of the sorted list, which means the first 'to_drop' low score will be removed from the list. Finally, calculate the remained average grads and assign the corresponding letter score.
