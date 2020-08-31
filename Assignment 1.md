@@ -99,7 +99,7 @@ def grade_calc(grades_in, to_drop):
 
 **4. Write a function with the following signature:** `odd_even_filter(numbers)`.
 ### description
-First, initialize the two sublists and output list by function 'list()'. Then deploy a loop to determine each element of the input list is odd or even, and apply 'list.append()' to assign the element to its corresponding sublists. Finally, apply 'list.append()' to cascade to sublists and output it.
+First, initialize the two sublists and output list by function 'list()'. Then deploy a loop to determine each element of the input list is odd or even, and apply 'list.append()' to assign the element to its corresponding sublists. Finally, apply 'list.append()' to cascade two sublists and output it.
 ### source code
 ```python
 def odd_even_filter(numbers):
