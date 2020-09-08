@@ -195,9 +195,12 @@ Fork repo->open Anaconda Prompt and install git pacakge->cd handson repo
 -> Edit B.py in math branch by adding two lines 
 -> Edit A.py in math branch by adding one line   
 -> Merge: Failed
+Manually fixing:
 -> Abort and reset the merge: 'git merge --abort''git reset --merge'
 -> Fixing B.py: Maunually or use vim in git bash
 -> merge again: git merge math
+Commend fixing:
+-> Use rebase operation: 'git checkout math' 'git rebase master'
 
 My problems: -Anaconda Prompt with git package can do almost git operations; however, vim editor is hard to intall on this environment, and I have to use Git Bash to implement it.
              -In part 1, Q11 and Q12 still make me confusion. I am not sure 'rebase' can replace 'merge' operation.
