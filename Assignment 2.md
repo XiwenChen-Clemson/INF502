@@ -189,7 +189,7 @@ step 4: merge again
 ## Part 1: Dealing with git: Using gitHub
 ### 4: Report your experience of making this submission, including the steps followed, commands used, and hurdles faced (within the file you created for the Part 1.
 ```
-Fork repo->open Anaconda Prompt and install git pacakge->cd handson repo
+Fork repo->cd handson repo
 -> check the repo status and its history: 'git branch' 'git checkout BRANCH_NAME' 'git log --decorate' 'git log --graph --all' 'git diff BRANCH_NAME'
 -> First merge: 'git merge math'. Successfully
 -> Edit B.py in math branch by adding two lines 
@@ -199,10 +199,11 @@ Manually fixing:
 -> Abort and reset the merge: 'git merge --abort''git reset --merge'
 -> Fixing B.py: Maunually or use vim in git bash
 -> merge again: git merge math
-Commend fixing:
+Commends fixing:
 -> Use rebase operation: 'git checkout math' 'git rebase master'
 
-My problems: -Anaconda Prompt with git package can do almost git operations; however, vim editor is hard to intall on this environment, and I have to use Git Bash to implement it.
+My problems: -I tried to useAnaconda Prompt with git package instead of git bash, which can do almost git operations; 
+             however, vim editor is hard to intall on this environment, and I have to use Git Bash to implement it.
              -In part 1, Q11 and Q12 still make me confusion. I am not sure 'rebase' can replace 'merge' operation.
 ```
 
