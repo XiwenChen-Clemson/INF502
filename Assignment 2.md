@@ -168,22 +168,19 @@ Automatic merge failed; fix conflicts and then commit the result.
    
 ### 11. Now repeat item 9, but proceed with the manual merge (Editing B.py). All implemented functions are needed. Explain your procedure
 ```
-step 1:Abort the merge:
->git merge --abort
->git reset --merge
-step 2:Edit B.py by deleting the two lines/the one line. Only modify one of them. manually or via vim editor
-step 3:commit the modification
->git add B.py
->git commit -m "maunual modified B"
-step 4: merge again
->git merge math
+
+step 1:Edit B.py by deleting the two lines/the one line. Only modify one of them. manually or via vim editor
+step 2:commit the modification
+step 3: merge again
+
 ```
 
 ### 12. Write a command (or set of commands) to proceed with the merge and make `master` branch up-to-date
 ```
-->git checkout math
-->git rebase master
-
+>vim B.py
+>git add B.py
+>git commit -m "maunual modified B"
+>git merge math
 ```
 
 ## Part 1: Dealing with git: Using gitHub
@@ -197,13 +194,13 @@ Fork repo->cd handson repo
 -> Merge: Failed
 Manually fixing:
 -> Abort and reset the merge: 'git merge --abort''git reset --merge'
--> Fixing B.py: Maunually or use vim in git bash
--> merge again: git merge math
-Commends fixing:
--> Use rebase operation: 'git checkout math' 'git rebase master'
+-> Fixing B.py: Maunually or use vim in git bash -> 'git add B.py' -> 'git commit -m "maunual modified B"'
+-> merge again: 'git merge math'
+
 
 My problems: -I tried to useAnaconda Prompt with git package instead of git bash, which can do almost git operations; 
              however, vim editor is hard to intall on this environment, and I have to use Git Bash to implement it.
-             -In part 1, Q11 and Q12 still make me confusion. I am not sure 'rebase' can replace 'merge' operation.
+             -In part 1, Q11 and Q12 still make me confusion. Isaw PPT suggested a command 'rebase'. I am not sure 'rebase' can replace 'merge' operation, and unfortunately,
+             I did not succeed by using 'git rebase <branch>'
 ```
 
