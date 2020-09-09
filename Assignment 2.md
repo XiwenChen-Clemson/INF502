@@ -168,7 +168,8 @@ Automatic merge failed; fix conflicts and then commit the result.
    
 ### 11. Now repeat item 9, but proceed with the manual merge (Editing B.py). All implemented functions are needed. Explain your procedure
 ```
-
+When merge faile, we open B.py and can see: git uses '<<<<<<<' '=======''>>>>>>>' to indicate different content in diff branches.
+To merge successfully, we just pick prefered content from one branch, and delete the reamining content and git symbols.
 step 1:Edit B.py by deleting the two lines/the one line. Only modify one of them. manually or via vim editor
 step 2:commit the modification
 step 3: merge again
