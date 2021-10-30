@@ -1,19 +1,13 @@
 CPSC-6040
+
 XIWEN CHEN (xiwenc@g.clemson.edu)
+Assignment #5  image transformation
 
-### Overoll
-Read,write, display an image from file, including mulit-funcitons can be operated:
+### overall
+- Searh the size of output image by forward mapping.
+- Do transformation by inverse mapping.
 
-### Functions
-- '1':only show red channel
-- '2':only show green channel
-- '3':only show bllue channel
-- 'O' or 'o': recover to original image
-- 'I' or 'i': inverse the color
-- 'V' or 'v': vertical flip
-- 'H' or 'h': Horizonal filp
-- 'W' or 'w': write the current image 
-- 'r' or 'R': read a image from file
+
 
 ### Complie
 ```
@@ -21,11 +15,23 @@ make
 ```
 ### how to run
 
-```./myimgview xxx ``` or just ```./myimgview```
-e.g.
-```./myimgview cube.ppm ```
+```./warper in.ong [out.png] ``` Please press ``` w ``` to store the image
 
-** Noting
-when you use ```./myimgview```, please press 'r' OR 'R' to read imag first.
+
+### Functions
+- rotation:``` r theta```
+- scale:``` s sx sy```
+- translate: ```t dx dy```
+- shear:``` h hx hy```
+- flip: fx = 1 flip horizontally, fy = 1 flip vertically: ```f fx fy```
+- perspective: ```p px py```
+- nonlinear twirl warp: ```n cx cy s```
+- nonlinear ripple warp: ```m tx ty ax ay```
+- ```d``` done
+
+
+
+### Issues
+Some values are not worked and may result in image distortion.
 
 
