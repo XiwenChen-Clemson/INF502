@@ -1,11 +1,11 @@
 CPSC-6040
 
 XIWEN CHEN (xiwenc@g.clemson.edu)
-Assignment #5  image transformation
+Assignment #6  Clean up
 
 ### overall
-- Searh the size of output image by forward mapping.
-- Do transformation by inverse mapping.
+- using bilinear interpolation to repair magnification artifacts.
+- using smoothing-before-sampling  to repair minification artifacts.
 
 
 
@@ -14,24 +14,11 @@ Assignment #5  image transformation
 make
 ```
 ### how to run
-
-```./warper in.ong [out.png] ``` Please press ``` w ``` to store the image
-
-
-### Functions
-- rotation:``` r theta```
-- scale:``` s sx sy```
-- translate: ```t dx dy```
-- shear:``` h hx hy```
-- flip: fx = 1 flip horizontally, fy = 1 flip vertically: ```f fx fy```
-- perspective: ```p px py```
-- nonlinear twirl warp: ```n cx cy s```
-- nonlinear ripple warp: ```m tx ty ax ay```
-- ```d``` done
+- Inv map 1:```./okwarp IN.jpeg 1 ``` . Then press ```r``` to show the repaired image
+- Inv map 2:```./okwarp IN.jpeg 2 ``` . Then press ```r``` to show the repaired image by Bi-interp. Press ```k``` show the rpaired image by combined strategy
+- Please press ``` w ``` to store the image
 
 
 
-### Issues
-Some values are not worked and may result in image distortion.
 
 
